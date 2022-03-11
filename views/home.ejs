@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title> 
+                To-do-list
+        </title>
+        <link rel="stylesheet" href="/project.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+        
+    </head>
+    <body>
+        
+        <div id="trial">
+            <h1 id="heading">TODO App</h1>
+       </div>
+       <form action="/create-task" method="POST">
+           <div id="description">
+               <span id="word">Description</span>
+               <input id="input1" type="text" name="description" placeholder="What do you need to do?" required>
+
+        
+           </div>
+       <!--    <div id="category">
+
+            Category
+
+           </div>
+           <div id="duedate">
+            
+
+           </div>
+        -->
+        <div class="row">
+            <div class="column">
+                <span id="word2">Category</span>
+                <select id="dropdown"  type="text" name="category" required>
+                    <option>Choose a category</option>
+                    <option>Personal</option>
+                    <option>Work</option>
+                    <option>School</option>
+                    <option>Cleaning</option>
+                    <option>Others</option>
+                </select>
+            </div>
+            <div class="column">
+                <span id="word2">Due-Date</span>
+                <input id="input2" name="duedate" type="text" placeholder="dd/mm/yyyy" required>
+
+
+            </div>
+          </div>
+              <div id="buttons">
+                  <button id="button1">
+                    <span class="Material-Icons-Outlined" id="id1">
+                        add
+                        </span>
+                        <p id="Addtask">Add Task</p></button>
+
+                        <div id="delbutton">
+                            <span class="Material-Icons-Outlined">
+                                delete
+                                </span>
+                                
+                              <a id="a" onclick="linking()">Delete Tasks</a>
+                              <span id="one">(one at time)</span>
+                        </div>
+
+              </div>   
+            
+              
+              
+       </form>
+       <% for(let i of tasklist){ %>
+
+            
+       <div id="adding">
+           
+         
+          <input class="custom-checkbox" type="checkbox" onclick="checkclicked('<%=i.id%>')" id="ch">
+            
+           <span id="details"><%=i.description%></span>
+           <span class="Material-Icons-Outlined" id="id2">
+            calendar_month
+            </span>
+            
+           <span id="details2"><%=i.duedate%><span>
+           <div id="rightbutton"><span id="spanbutton">
+                         <%=i.category%>
+                         </span>
+           </div>
+
+       </div>
+    <% } %>
+
+    <script src="project.js"></script>
+    </body>
+</html>

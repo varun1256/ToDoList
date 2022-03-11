@@ -1,0 +1,164 @@
+#trial{
+    height:50px;
+    width: 99vw;
+    border-bottom:2px black solid;
+    
+    background-color:white;
+}
+#heading{
+    color: grey;
+    margin-left:40vw;
+}
+#description{
+    height:60px;
+    width:99vw;
+    border-bottom:2px black solid;
+    background-color:white;
+}
+#description:hover{
+    background-color: lightgrey;
+   
+}
+
+#word{
+    color: grey;
+    margin-top: 0px;
+    padding: 0px;
+    display: block;
+
+}
+#input1{
+    margin-top: 0px;
+    height:30px;
+    width:99vw;
+    border:0px;
+    color: darkgray;
+}
+#input2{
+       height: 30px;
+       width:50vw;
+       margin-left: 2px;
+       border:0px;
+}
+/*#category{
+    height:60px;
+    width:45vw;
+    border-bottom:2px black solid;
+    border-right:2px black solid;
+    
+}
+#duedate{
+    height:60px;
+    width:53vw;
+    border-bottom: 2px black solid;
+    
+    border-left: 2px black solid;
+    
+}*/
+.row {
+    display: flex;
+    width:99vw;
+    height:60px;
+    
+  }
+  
+  .column {
+    flex: 50%;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    border-bottom: 2px black solid;
+    height:60px;
+    
+  }
+  .column:hover{
+      background-color:lightgrey;
+  }
+  #word2{
+     padding-left:4px;
+     padding-top:4px;
+     color:grey;
+  }
+  #dropdown{
+      height:30px;
+      width:45vw;
+      margin-top: 2px;
+      margin-left: 2px;
+      border:0px;
+  }
+  #buttons{
+      height:60px;
+      width:99vw;
+      border-bottom: 2px black solid;
+      display:flex;
+  }
+  #button1{
+      height:40px;
+      width:200px;
+      background-color:black;
+      margin-left:30vw;
+      margin-top:10px;
+      color:white;
+      display: inline-block;
+
+
+  }
+  #id1{
+      margin-bottom:20px;
+      margin-left:10px;
+      
+      color:white;
+  }
+  #Addtask{
+    display: inline;
+    margin-top:2px;
+  }
+  #adding{
+      height:60px;
+      width:99vw;
+      background-color:white;
+      border-bottom: 2px black solid;
+      
+  }
+  #rightbutton{
+      height:30px;
+      width:100px;
+      margin-bottom: 10px;
+      margin-left:85vw;
+      background-color: red;
+      text-align: center;
+      color: white;
+  }
+  #details{
+      margin-top: 2px;
+      font-size:large;
+      
+      color:grey;
+      margin-left: 3vw;
+  }
+  #details2{
+      margin-left:0vw;
+      color: lightgray;
+  }
+  #id2{
+      display: inline-block;
+ margin-left:28vw;
+  }
+  #delbutton{
+      height: 40px;
+      width:200px;
+      margin-left:50px;
+      margin-top: 10px;
+      display: inline-block;
+      background-color: red;
+      text-align:center;
+      color: white;
+      font-size:20px;
+  }
+  #one{
+      font-size:10px;
+      
+  }
+  #a{
+    text-decoration: none;
+    color:white;
+  }
